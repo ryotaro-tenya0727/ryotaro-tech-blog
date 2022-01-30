@@ -8,7 +8,7 @@ import {
   navLinkText,
   siteTitle,
 } from './layout.module.css';
-export const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -50,3 +50,5 @@ export const Layout = ({ pageTitle, children }) => {
     </div>
   );
 };
+
+export default Layout;
